@@ -354,6 +354,8 @@ public class DataAccess {
 		}
 	}
 
+	
+	//Prueba comentario
 	public boolean isRegistered(String erab, String passwd) {
 		TypedQuery<Long> travelerQuery = db.createQuery(
 				"SELECT COUNT(t) FROM Traveler t WHERE t.username = :username AND t.passwd = :passwd", Long.class);
